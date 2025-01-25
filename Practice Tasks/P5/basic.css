@@ -1,0 +1,221 @@
+body{
+    font-family: "Lato";
+    background-color:hsl(0, 0%, 100%);
+    background: url("https://img.freepik.com/free-photo/white-painted-wall-texture-background_53876-138197.jpg?size=626&ext=jpg");
+}
+#id1{
+    color:blueviolet;
+    text-align: left;
+    text-transform: capitalize;
+    /* text-align: justify; */
+    font-size: medium;
+    font-weight: 300;
+}
+.header{
+    font-weight:bold;
+    color: tomato;
+    text-align: center;
+    /* text-decoration:dash; */
+}
+.below-header{
+    text-align: center;
+    font-weight: 300;
+    background-color:aquamarine;
+    background-size:cover;
+}
+.Name{
+    font-weight: 600;
+}
+#fnameid{
+    /* padding: 2px; */
+    /* border: 2px dotted black; */
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+#snameid{
+    margin-top: 2px;
+    margin-bottom: 4px;
+}
+#submit{
+    background-color: rgb(247, 139, 157);
+    color: black;
+    /* border: 2px; */
+    /* display: flex;
+    align-items:flex-end; */
+    position:sticky;
+    border: none;
+    /* size: 100px; */
+    height: 50px;
+    width: 50px;
+    text-align:center;
+    border-radius: 5px;
+    font-weight: 400;
+    /* text-decoration: double; */
+    margin-left: 50px;
+    transition: all 200ms ease-in-out;
+    padding: 4px;
+
+}
+#submit:hover
+{
+    background-color: rgb(254, 164, 179);
+    cursor: pointer;
+    /* padding: 10px; */
+    color:black;
+    /* transform: translate(30px ,20px); */
+    transform: rotate(90deg);
+    /* skewX, translate(), and many more instead of rotate */
+
+}
+.divclass{
+    height: 400px;
+    width: 50%;
+    background-color:beige;
+    margin-top: 20px;
+    background: url("https://images.unsplash.com/photo-1494475673543-6a6a27143fc8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: red;
+    float: right;
+}
+.divclass2{
+    height:400px;
+    width: 50%;
+    background-color: white;
+    /* margin-left:350px; */
+    background: linear-gradient(to top,rgb(94,255,126),rgba(255, 255, 255,0));
+    background-size: cover;
+    float:left;
+}
+.divclass3{
+    background-color: black;
+    height: 400px;
+    width: 50%;
+    float: right;
+    background: radial-gradient(circle,rgb(94,255,126),rgba(255, 255, 255),rgb(94,200,100));
+
+}
+.italic{
+    /* text-decoration: underline; */
+    font-style: italic;
+}
+.seconddiv{
+    background-color:aquamarine;
+    height: 400px;
+    width: 50%;
+    float: left;
+    margin-top: 20px;
+}
+.secondpara{
+    text-align: center;
+    text-transform: capitalize;
+    text-shadow: 3px 3px 2px pink;
+    /* text-decoration: wavy; */
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-style:normal;
+
+}
+#flag{
+    height: 350px;
+    width: 80vw;
+    /* align-items: center; */
+    border: 2px solid black;
+    /* padding: 10px;  */
+    padding:10px 10px 10px 10px;
+    /* top right bottom left in padding */
+    /* space between content and border is padding */
+    margin: 30px;
+    margin: 30px 60px
+    /* top and bottom same and left and right same in margin */
+    /* margin is moving the content in the page */
+}
+.h33{
+    float:right;
+    margin-top: 50px;
+    animation-name: red-to-pink;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-delay: 3s;
+}
+#idoflist{
+    display: none;
+}
+.container
+{
+    background-color: aliceblue;
+    height: 200px;
+    /* using height for justify content understanding */
+    margin: 10px;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    
+    /* flex wrap is lia hota hai k agr contents zyada hain to new line py shiift krdo bajaye iske k unhen sth sth jordo */
+    /* justify-content: center; */
+    /* justify content sy abhi center main aaengi items */
+    justify-content:space-between;
+    /* is contents k bich space ajayegi  */
+    /* justify-content: space-around; */
+    /* is sy sides py b space ajayegi bich k sth sth */
+    align-items: center;
+    /***** align-items basically items k vertically move krwata hai aur justify-content horizontally */
+}
+
+.container-item{
+    background-color: green;
+    margin: 5px;
+    width: 30px;
+    /* height: 30px; */
+    text-align: center;
+    padding: 2px;
+    text-decoration: double;
+}
+.grid-container{
+    margin: 20px;
+    display: grid;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 20px 20px 70px;
+    /* number of columns aur unko alot hone walay pixels */
+    grid-template-rows: 300px 100px 600px;
+    /* number of rows aur unko alot hone walay pixels */
+    justify-content: space-between;
+    /* align-content:space-between; */
+    grid-column-gap: 200px ;
+    /* grid-row-gap: 150px; */
+    /* grid-gap: 100px 100px; */
+    /* grid area in html also */
+}
+.grid-container-item{
+    margin: 5px;
+    width: 30px;
+    height: 100px;
+    border-radius: 2px;
+    text-align: center;
+    padding: 6px;
+    font-weight: 500;
+}
+.link:hover
+{
+    color: rgb(205, 174, 62);
+    /* font-weight: ; */
+}
+.grid-container:hover{
+    color: azure;
+    background-color: black;
+    
+}
+@keyframes red-to-pink{
+    0%{
+        background-color: red;
+    }
+    50%{
+        background-color: yellowgreen;
+    }
+    100%{
+        background-color: pink;
+    }
+}
